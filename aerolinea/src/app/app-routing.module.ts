@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ReservacionListComponent } from './reservacion/reservacion-list/reservacion-list.component'; 
+import { ReservacionListComponent } from './reservacion/reservacion-list/reservacion-list.component';
+//import { ReservacionListComponent } from './reservacion/reservacion-list/reservacion-list.component'; 
 
 const routes: Routes = [
 
   {
-    path: '',
+    path: 'reservacion',
     component: ReservacionListComponent
   }
 ];
