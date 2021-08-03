@@ -1,1 +1,32 @@
-<p>reservacion-form works!</p>
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="submitReservacion()">
+                <div class="form-group">
+                    <input type="text" name="cliente_id" [(ngModel)]= "reservacion.cliente_id" class="form-control" placeholder="Cliente" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="vuelo_id" [(ngModel)]= "reservacion.vuelo_id" class="form-control" placeholder="Vuelo" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="clase" [(ngModel)]= "reservacion.clase" class="form-control" placeholder="Clase de vuelo" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="aciento" [(ngModel)]= "reservacion.aciento" class="form-control" placeholder="Numero de asiento" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precio" [(ngModel)]= "reservacion.precio" class="form-control" placeholder="Precio del vuelo" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="descuento" [(ngModel)]= "reservacion.descuento" class="form-control" placeholder="Descuento si aplica" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="preciodes" [(ngModel)]= "reservacion.preciodes" class="form-control" placeholder="Precio con descuento aplicado" >
+                </div>
+                <button class="btn btn-primary btn-block">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
